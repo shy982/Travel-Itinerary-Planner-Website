@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>SuShy-Build Trip</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!--================Header Menu Area =================-->
+    <header class="header_area">
+        <div class="top_menu row m0">
+           <div class="container">
+               <div class="float-left">
+                <a class="dn_btn" href=""><i class="ti-mobile"></i>+91 6969696969</a>
+                <span class="dn_btn"> <i class="ti-location-pin"></i> The National Institute of Engineering, Manandavadi Road, Mysore 570008</span>
+            </div>
+            <div class="float-right">
+                <span class="follow_us">Follow us: </span>
+                <ul class="list header_social">
+                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                    <li><a href="#"><i class="ti-twitter"></i></a></li>
+                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                    <li><a href="#"><i class="ti-vimeo"></i></a></li>
+                </ul> 
+            </div>
+        </div>  
+    </div>  
+    <div class="main_menu">
+       <nav class="navbar navbar-expand-lg navbar-light">
+           <div class="container">
+            <img src="img/logo.png" height="80" width = "150" alt="">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <a class="navbar-brand logo_h" href="index.html">SuShy</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+             <!-- Collect the nav links, forms, and other content for toggling -->
+             <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                <ul class="nav navbar-nav menu_nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+                     <li class="nav-item submenu dropdown">
+                          <a href="places.html" id = "navbarDropdown" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Places
+                          <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" href="mysore.html">Mysuru</a></li>
+                            <li class="nav-item"><a class="nav-link" href="shimoga.html">Shivamogga</a></li>
+                            <li class="nav-item"><a class="nav-link" href="chikkmag.html">Chikkamagaluru</a></li>
+                        </ul> 
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">services</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>     
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+      <div class="right-button">
+        <ul>
+            <!--<li class="shop-icon"><a href="#"><i class="ti-shopping-cart-full"></i><span>0</span></a></li>-->
+            <li><a href="#"><i class="ti-search"></i></a></li>
+        </ul>
+    </div> 
+</div>
+</nav>
+
+</div>
+</header>
+<!--================Header Menu Area =================-->
+
+
+<!--================Hero Banner Area Start =================-->
+<section class="hero-banner hero-banner-sm">
+    <div class="container text-center">
+      <h2>Build Your Itinerary</h2>
+      <nav aria-label="breadcrumb" class="banner-breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Fill in your preferences below</li>
+      </ol>
+  </nav>
+</div>
+<div class="Guidelines">
+ <h3><strong>Guidelines</strong></h3>
+<p><span>We will be asking a few questions regarding your preferences,dates of travel and questions regarding the people you travel with.<br>Please answer them honestly so that we can provide you recommendations exactly the way it suits you and your family.<br>We Promise, None of your answers/data will be stored for the future once you finish downloading the Automatically generated day-by-day Itinerary/Schedule .<br>
+    <br>Hope you have a satisying experience with us .<br>
+</span></p> 
+</div>
+</section>
+
+<!--The Questionairre -->
+<p><br><br></p>
+<form autocomplete="off" id = "nameform" action="/action_page.php">
+    <ol>
+        <li><p><strong>Where have you decided to go ?</strong><br></p></li>
+            <div class="autocomplete" style="width:300px;">
+            <input id="myInput" type="text" name="myCountry" placeholder="City">
+            </div>
+            <p><br></p>
+        <li><p><strong>How many adults are travelling ? ( Include yourself if you are one. )</strong></p></li>
+        <p><br></p>
+        <div id="incdec">
+    <input type="text" id = "anum" value="0" />
+    <a id="upa" class="up"><font color = "black"><strong>+1</strong></font></a>
+<a id="downa" class="down"><font color = "black"><strong>-1</strong></font></a>
+</div>
+        <p><br></p>
+    <li><p><strong>How many children are travelling with you ? ( Include yourself if you are one, although what is a kid doing in here ?!! )</strong></p></li>
+    <p><br></p>
+         <div id="incdec1">
+    <input type="text" id = "cnum" value="0" />
+    <a id="upc" class="up"><font color = "black"><strong>+1</strong></font></a>
+<a id="downc" class="down"><font color = "black"><strong>-1</strong></font></a>
+</div>
+        <p><br></p>
+    <li><p><strong>Select your Arrival & Departure dates at the place of visit :- </strong></p></li>
+    <p>( Select dates from the calendar )</p> 
+    <p><br></p>  
+  <p>Arrival Date : <br><input type="text" id="datepicker"></p>
+  <p>Departure Date : <br><input type="text" id="datepicker1"></p>
+        <p><br></p>
+    <li><p><strong>How heavily would you like to explore each day ? </strong><br></p></li>
+   <!-- <label for="enthusiasm">Enter How much you love to explore </label>-->
+    <select id="enthusiasm" name=" Exploration interests ">
+    <option value="0">--Select--</option>
+    <option value="1">Very Enthusiastic (4-5 places a day kind of person/people)</option>
+    <option value="2">Moderately Enthusiastic Don't Like to stretch myself/ourselves too much! (3-4 places a day)</option>
+    <option value="3">I/We just want to Relax all day! (1-2 major spots per day only) </option>
+  </select>
+  <p><br></p>
+    <li><p><strong>What is your food preference ? </strong></p></li>
+    <p><br></p>
+        <label class="containermcq">Veg
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="containermcq">Non-Veg
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+        <p><br></p>
+    <li><p><strong>What Cuisine do you like best ? ( We always recommend you go with local cuisines! )</strong></p></li>
+    <p><br></p>
+         <label class="containermcq1">North Indian
+  <input type="radio" name="radio1">
+  <span class="checkmark1"></span>
+</label>
+<label class="containermcq1">South Indian
+  <input type="radio" name="radio1">
+  <span class="checkmark1"></span>
+</label>
+<label class="containermcq1">Chinese
+  <input type="radio" name="radio1">
+  <span class="checkmark1"></span>
+</label>
+<label class="containermcq1">Continental
+  <input type="radio" name="radio1">
+  <span class="checkmark1"></span>
+</label>
+<label class="containermcq1">Local Cuisine of the place I visit (Or anything is fine)
+  <input type="radio" name="radio1">
+  <span class="checkmark1"></span>
+</label>
+        <p><br></p>
+    <li><p><strong>Money Wise, What do you think trips are for ? </strong></p></li>
+    <p><br></p>
+         <label class="containermcq2">Spend like it's the last trip you'll ever have!
+  <input type="radio" name="radio2">
+  <span class="checkmark2"></span>
+</label>
+<label class="containermcq2">Spend Nice, But think twice !
+  <input type="radio" name="radio2">
+  <span class="checkmark2"></span>
+</label>
+<label class="containermcq2">
+  <input type="radio" name="radio2">Hey, Money doesn't grow on trees y'all !!
+  <span class="checkmark2"></span>
+</label>
+<label class="containermcq2">Is this a trick question ?!
+  <input type="radio" name="radio2">
+  <span class="checkmark2"></span>
+</label>
+        <p><br></p>
+    <li><p><strong>Have you booked your own accomodation or have a private one ?</strong></p></li>
+    <p><br></p>
+         <label class="containermcq3">Allow SuShy to Suggest accomodations
+  <input type="radio" name="radio3">
+  <span class="checkmark3"></span>
+</label>
+<label class="containermcq3">I have booked a hotel myself.
+  <input type="radio" name="radio3">
+  <span class="checkmark3"></span>
+</label>
+<label class="containermcq3">Have my own private accomodation(Ex: Your friend's/relative's home)
+  <input type="radio" name="radio3">
+  <span class="checkmark3"></span>
+</label>
+        <p><br></p>
+    <li><p><strong>Where would you prefer to stay ?</strong></p></li>
+    <p><br></p>
+         <label class="containermcq4">Near the Railway Station
+  <input type="radio" name="radio4">
+  <span class="checkmark4"></span>
+</label>
+<label class="containermcq4">Near the Central Bus Station
+  <input type="radio" name="radio4">
+  <span class="checkmark4"></span>
+</label>
+<label class="containermcq4">Near the Airport
+  <input type="radio" name="radio4">
+  <span class="checkmark4"></span>
+</label>
+<label class="containermcq4">Didn't I tell you that I have/booked my own accomodation!
+  <input type="radio" name="radio4">
+  <span class="checkmark4"></span>
+</label>
+        <p><br></p>
+    </ol>
+    
+</form>
+<button type="submit" form="nameform" id = "submit" value="Submit" >Make My Itinerary Now!</button>
+
+<!--<button class="buttonload">
+  <i class="fa fa-spinner fa-spin"></i>Loading
+</button>-->
+<!--================ Start Testimonial Area =================-->
+<section class="testimonial-area area-padding">
+    <div class="container">
+     <div class="area-heading">
+        <h3 class="line">Customer Reviews</h3>
+        <p>What our regular users have to say.</p>
+
+    </div>
+    <div class="row">
+        <div class="active-testimonial-carusel owl-carousel">
+            <div class="single-testimonial item d-flex flex-row">
+                <div class="thumb">
+                    <img class="img-fluid" src="img/elements/tes1.jpg" alt="">
+                </div>
+                <div class="desc">
+                    <h4>Sagar C A</h4>
+                    <p class="designation">Engineering Associate</p>
+                    <p>
+                        My Experience with SuShy Travel Planner was very satisfying. Their Recommendations, ideas and suggestions
+                        are very good and a day by day guide is all I needed. Really Enjoyed my trip to Varanasi!
+                    </p>    
+                </div>
+            </div>
+            <div class="single-testimonial item d-flex flex-row">
+                <div class="thumb">
+                    <img class="img-fluid" src="img/elements/tex2.jpg" alt="">
+                </div>
+                <div class="desc">
+                    <h4>Sunag Rao</h4>
+                    <p class="designation">Bank Manager</p>
+                    <p>
+                       The Comfort what SuShy gave me during my last minute trip plans to Udupi in my busy schedule with family is unmatchable.
+                       They gave me everything i needed from accomodation advice,food,places to visit...and that too for each and everyday i was holiday-ing! Really Kudos to SuShy. 
+                    </p>
+
+                </div>
+            </div>
+            <div class="single-testimonial item d-flex flex-row">
+                <div class="thumb">
+                    <img class="img-fluid" src="img/elements/user1.png" alt="">
+                </div>
+                <div class="desc">
+                    <h4>Radhika Kulkarni</h4>
+                    <p class="designation">Chartered Accountant</p>
+                    <p>
+                       I have no words to express the ease of travelling that SuShy gave me.I had been to Mysore and i have to say each and every family member of mine thoroughly enjoyed all thanks to their personalized recommendations based on my kids' age, my preferences and that of my husbands. Hats off SuShy!!
+                   </p>  
+               </div>
+           </div>
+           <div class="single-testimonial item d-flex flex-row">
+            <div class="thumb">
+                <img class="img-fluid" src="img/elements/g8.jpg" alt="">
+            </div>
+            <div class="desc">
+                <h4>Sourabh Rajashekar</h4>
+                <p class="designation">Executive Designer</p>
+                <p>
+                    I was at Hampi for 5 days with my entire family.I was confused on what to visit,where to stay,What my 2 Kids would do. All these worries were a distant memory once i stumbled upon SuShy.
+                </p>                 
+            </div>
+        </div>
+
+        <div class="single-testimonial item d-flex flex-row">
+            <div class="thumb">
+                <img class="img-fluid" src="img/elements/tes1.jpg" alt="">
+            </div>
+            <div class="desc">
+                <h4>Yogesh Chandrakanth</h4>
+                <p class="designation">Telecom Engineer</p>
+                <p>
+                    When i got an unexpected leave from office for a week, I decided to go with my wife to Goa!
+                    I asked her what has she planned, she said SuShy!! 
+                </p>  
+            </div>
+        </div>
+         <div class="single-testimonial item d-flex flex-row">
+                <div class="thumb">
+                    <img class="img-fluid" src="img/elements/tes1.jpg" alt="">
+                </div>
+                <div class="desc">
+                    <h4>YSK Amarthya</h4>
+                    <p class="designation">Defence Attorney</p>
+                    <p>
+                        I'm Extremely pleased with SuShy's Services to every trip of mine in the last few years, and I would recommend SuShy to all my friends. 
+                    </p>    
+                </div>
+            </div>
+    </div>
+</div>
+</div>
+</section>
+<!--================ End Testimonial Area =================-->
+
+<!--================ start footer Area =================-->
+<footer class="footer-area ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4  col-md-6">
+                <div class="single-footer-widget">
+                    <h6>Useful Links</h6>
+                    <div class="row">   
+                        <div class="col-lg-6">
+                           <ul class="footer-nav">
+                            <li><i class="ti-angle-right"></i>
+                                <a href="#">home</a>
+                            </li>
+                            <li><i class="ti-angle-right"></i>
+                                <a href="#">about us</a>
+                            </li>
+                            <li><i class="ti-angle-right"></i>
+                                <a href="#">company news</a>
+                            </li>
+                            <li><i class="ti-angle-right"></i>
+                                <a href="#">projects</a>
+                            </li>
+                            <li><i class="ti-angle-right"></i>
+                                <a href="#">careers</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-6">
+                       <ul class="footer-nav">
+                        <li><i class="ti-angle-right"></i>
+                            <a href="#">our services</a>
+                        </li>
+                        <li><i class="ti-angle-right"></i>
+                            <a href="#">terms and condition</a>
+                        </li>
+                        <li><i class="ti-angle-right"></i>
+                            <a href="#">shop</a>
+                        </li>
+                        <li><i class="ti-angle-right"></i>
+                            <a href="#">contuct us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-4  col-md-6">
+        <div class="single-footer-widget mail-chimp">
+            <h6 class="mb-20">Business Hours</h6>
+            <ul class="business-hour">
+                <li>Monday - Friday : <span>9:00 am - 18:00 pm</span>   </li>
+                <li>Saturday :<span>9:00 am - 16:00 pm</span></li>
+                <li>Sunday :<span>Closed</span></li>
+            </ul>
+            <p>We work all the holidays!</p>
+        </div>
+    </div>
+    <div class="col-lg-4  col-md-12">
+        <div class="single-footer-widget newsletter">
+            <h6>Email Newsletter</h6>
+            <div id="mc_embed_signup">
+                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                method="get" class="form-inline">
+
+                <div class="form-group row no-gutters">
+                    <div class="col-lg-8 col-md-8 col-7">
+                        <input name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
+                        required="" type="email">
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-5">
+                        <button class="nw-btn main_btn circle">subscribe
+                            <span class="lnr lnr-arrow-right"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="info"></div>
+            </form>
+        </div>
+        <p>Sign up for new Recover Construction Company
+        content, updates, surveys & offers.</p>
+        <a class="footer-link" href="#">privacy policy</a>
+    </div>
+</div>
+</div>
+
+
+</div>
+
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row ">
+            <p class="col-lg-12 footer-text "><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>    
+    </div>  
+</div>
+
+</footer>
+<!--================ End footer Area =================-->
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stellar.js"></script>
+<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendors/isotope/isotope.pkgd.min.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/theme.js"></script>
+<!--<script >
+    var countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia &amp; Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central Arfrican Republic","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauro","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre &amp; Miquelon","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","St Kitts &amp; Nevis","St Lucia","St Vincent","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad &amp; Tobago","Tunisia","Turkey","Turkmenistan","Turks &amp; Caicos","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+-->
+<script>
+     var countries = ["Agra","Agumbe","Andaman & Nicobar","Alapuzha","Bangalore","Bhopal","Bubhaneshwar","Chandigarh","Chennai","Coimbatore","Chikmagaluru","Delhi","Guwahati","Hyderabad","Imphal","Jaipur","Jamshedpur","Kolkata","Lakshadweep","Madurai","Mangalore","Mumbai","Mysore","Nagpur","Panaji","Pondicherry","Shimoga","Tirupati","Udupi","Varanasi","Vishakapatnam"];
+    function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+              b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+      x[i].parentNode.removeChild(x[i]);
+    }
+  }
+}
+/*execute a function when someone clicks in the document:*/
+document.addEventListener("click", function (e) {
+    closeAllLists(e.target);
+});
+}
+</script>
+<script>
+autocomplete(document.getElementById("myInput"), countries);
+</script>
+ <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+   <script>
+  $( function() {
+    $( "#datepicker1" ).datepicker();
+  } );
+  </script>
+
+  <script type="text/javascript">
+$(document).ready(function(){
+    $("#upa").on('click',function(){
+        $("#incdec input").val(parseInt($("#incdec input").val())+1);
+    });
+
+    $("#downa").on('click',function(){
+         if ($("#incdec input").val()>0)
+        $("#incdec input").val(parseInt($("#incdec input").val())-1);
+    });
+
+});</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#upc").on('click',function(){
+        $("#incdec1 input").val(parseInt($("#incdec1 input").val())+1);
+    });
+
+    $("#downc").on('click',function(){
+        if ($("#incdec1 input").val()>0)
+            $("#incdec1 input").val(parseInt($("#incdec1 input").val())-1);
+    });
+
+});</script>
+
+  <!--
+    <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+<h2>Modal Signup Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+  -->
+</body>
+</html>
